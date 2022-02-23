@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+body {
+  display: grid;
+}
+
+.header {
+  height: 10vh;
+  background-color: green;
+  width: full;
+}
+
+.footer {
+  height: 10vh;
+  background-color: purple;
+  width: full;
+}
+
+.layout {
+  display: grid;
+  height: 80vh;
+  grid-template: repeat(10, 1fr) / repeat(12, 1fr);
+  grid-gap: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.layout > div {
+  border-radius: 10px 0 10px 0;
+}
+
+.sidebar {
+  background-color: pink;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 11;
+}
+
+.nav {
+  background-color: yellow;
+  grid-column: 3 / span 10;
+  grid-row: 1 / span 2;
+}
+
+.article {
+  background-color: gray;
+  grid-column: 3 / span 10;
+  grid-row: 3 / span 9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article > p {
+  text-align: justify;
+  width: 95%;
+
+}
+
+.quote {
+  font-weight: 300;
+}
